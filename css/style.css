@@ -1,12 +1,9 @@
 :root {
-  --main-bg-color: #4f46e5;
-  --secondary-bg-color: #6366f1;
+  --main-bg-color: #6366f1;
+  --secondary-bg-color: #818cf8;
+  --tertiary-bg-color: #a5b4fc;
 }
 
-.main{
-  min-height: 100vh;
-  padding: 0px;
-}
 
 h1{
   color: var(--main-bg-color);
@@ -20,13 +17,32 @@ body {
   font-family: Poppins, italic;
 }
 
+/* Login */
+
+.main{
+  min-height: 100vh;
+  padding: 0% 10%;
+}
+
 .img-login{
   width: 600px;
   height: 600px;
-  position: relative;
-  margin-top: 30%;
-  margin-left: 10%;
+  margin-top: 200px;
+  
 }
+
+/* Footer */
+
+.main-footer div{
+  background-color: rgb(247, 246, 246);
+  font-size: 0.8rem;
+}
+
+.main-footer a{
+  text-decoration: none;
+}
+
+/* Input */
 
 .form-check-input:focus {
   border-color: white;
@@ -46,6 +62,8 @@ body {
   box-shadow: 0 0 0 0.25rem #a5b4fc;
 }
 
+/* Button */
+
 .btn-login {
   color: white;
   background-color: var(--secondary-bg-color);
@@ -64,14 +82,18 @@ body {
   transition: 0.1s;
 }
 
+/* @ Mediaquerys */
+
 @media only screen and (max-width: 1398px) {
+
+  /* @ Login */
 
   .main{
     margin: 10px;
     padding: 10px;
   }
   .box-image{
-    display: none;
+    display: none !important;
   }
 
   .btn-login{
